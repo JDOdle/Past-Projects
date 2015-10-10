@@ -1,0 +1,14 @@
+#pricing-title {
+    padding-bottom: 20px;
+}
+
+.package {
+    display: inline-block;
+    width: 30.9%;
+    vertical-align: top;
+    padding: 0px 1%;
+}
+
+.package * {
+    width: 100%;
+}

@@ -1,0 +1,48 @@
+* {
+    margin: 0px;
+}
+
+#content {
+    font-size: 18px;
+    color: black;
+    min-width: 830px;
+    max-width: 1100px;
+    margin: auto;
+}
+
+.page-content:not(#home-page) {
+    display: none;
+}
+
+.content-title {
+    text-align: left;
+}
+
+.page-content {
+    padding-top: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.content-title {
+    padding-bottom: 20px;
+}
+
+.clickable {
+    cursor: pointer;
+    cursor: hand;
+}
+
+.fade {
+    opacity: .4;
+}
+
+.stop-select {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+}
+
+

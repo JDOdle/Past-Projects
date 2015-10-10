@@ -1,0 +1,61 @@
+#main-header {
+    padding: 0px 10%;
+    padding-top: 50px;
+}
+
+#main-header-content {
+    background-color: white;
+    border-style: solid;
+    text-align: center;
+    border-width: 2px;
+    padding: 30px 0px;
+}
+
+#title {
+    font-size: 60px;
+    font-family: 'Amatic SC';
+}
+
+#sub-title {
+    font-size: 20px;
+    font-family: 'Amatic SC';
+    padding: 20px 0px;
+}
+
+#main-menu {
+    display: inline-block;
+}
+
+.main-menu-item {
+    display: inline-block;
+    border-left-style: solid;
+    border-width: 1px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 15px;
+    padding-right: 10px;
+    font-family: sans-serif;
+}
+
+#gallaries {
+    border-left: none;
+}
+
+#gallaries-sub-menu {
+    position: absolute;
+    width: 230px;
+    background-color: white;
+    box-shadow: 0px 0px 5px grey;
+    z-index: 1;
+}
+
+.sub-menu-item {
+    border-bottom-style: solid;
+    border-width: 1px;
+    padding: 5px 0px;
+    font-family: sans-serif;
+}
+
+.sub-menu-item:last-child {
+    border: none;
+}

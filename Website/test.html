@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title> Justin's Website </title>
+    <meta charset="utf-8" />
+    
+    <link rel="stylesheet" href="Styling-CSS/header.css" type="text/css" />
+    <link rel="stylesheet" href="Styling-CSS/home.css" type="text/css" />
+    <link rel="stylesheet" href="Styling-CSS/behind_the_lens.css" type="text/css" />
+    <link rel="stylesheet" href="Styling-CSS/pricing.css" type="text/css" />
+    <link rel="stylesheet" href="Styling-CSS/contact.css" type="text/css" />
+    <link rel="stylesheet" href="Styling-CSS/blog.css" type="text/css" />
+    <link rel="stylesheet" href="Styling-CSS/footer.css" type="text/css" />
+    <link rel="stylesheet" href="Styling-CSS/general.css" type="text/css" />
+    <link rel="stylesheet" href="Styling-CSS/slideshow.css" type="text/css" />
+    
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Amatic+SC" />
+    
+    <script src="Functionality-JQuery/jquery-2.1.3.js"></script>
+    <script src="Functionality-JQuery/jquery.js"></script>
+
+    <meta name="viewport"/>
+</head>
+<body class="body" onload="centerGalImages()">
+    <div class="slide-show stop-select" id="page-cover"></div>
+    <img class="slide-show" id="slide-show-image" src=""/>
+    <div class="slide-show slide-show-btn clickable stop-select" id="last"><div class="fade"></div></div>
+    <div class="slide-show slide-show-btn clickable stop-select" id="next"><div class="fade"></div></div>
+    <div class="slide-show clickable stop-select" id="exit-btn"></div>
+    <div id="content">
+        <header id="main-header">
+            <div id="main-header-content">
+                <p id="title">Olive Branch Photography</p>
+                <p id="sub-title">Snapshots of Life</p>
+                <nav class="nav clickable" id="main-menu">
+                    <ul>
+                        <li class="main-menu-item" id="gallaries"><span class="fade">Gallaries</span></li>
+                        <li class="main-menu-item" id="behind_the_lens"><span class="fade">Behind the Lens</span></li>
+                        <li class="main-menu-item" id="pricing"><span class="fade">Pricing</span></li>
+                        <li class="main-menu-item" id="contact"><span class="fade">Contact</span></li>
+                        <li class="main-menu-item" id="blog"><span class="fade">Blog</span></li>
+                    </ul>
+                </nav>
+                <div class="nav sub-menu clickable" id="gallaries-sub-menu" style="display: none;">
+                    <div class="sub-menu-item" id="item1"><span class="fade">Birth</span></div>
+                    <div class="sub-menu-item" id="item2"><span class="fade">Maternity/Newborn</span></div>
+                    <div class="sub-menu-item" id="item3"><span class="fade">Babywearing/Feading</span></div>
+                    <div class="sub-menu-item" id="item4"><span class="fade">Love</span></div>
+                    <div class="sub-menu-item" id="item5"><span class="fade">Weddings</span></div>
+                    <div class="sub-menu-item" id="item6"><span class="fade">Family</span></div>
+                    <div class="sub-menu-item" id="item7"><span class="fade">Children</span></div>
+                    <div class="sub-menu-item" id="item8"><span class="fade">Moments of Beauty</span></div>
+                </div>
+            </div>
+        </header>
+        <div class="page-content" id="home-page">
+            <div class="image-table">
+                    <div class="img-container"><img class="image clickable" src=""/></div>
+                    <div class="img-container"><img class="image clickable" src=""/></div>
+                    <div class="img-container"><img class="image clickable" src=""/></div>
+                    <div class="img-container"><img class="image clickable" src=""/></div>
+                    <div class="img-container"><img class="image clickable" src=""/></div>
+                    <div class="img-container"><img class="image clickable" src=""/></div>
+                    <div class="img-container"><img class="image clickable" src=""/></div>
+                    <div class="img-container"><img class="image clickable" src=""/></div>
+                    <div class="img-container"><img class="image clickable" src=""/></div>
+                    <div class="img-container"><img class="image clickable" src=""/></div>
+                    <div class="img-container"><img class="image clickable" src=""/></div>
+                    <div class="img-container"><img class="image clickable" src=""/></div>
+                    <div class="img-container"><img class="image clickable" src=""/></div>
+                    <div class="img-container"><img class="image clickable" src=""/></div>
+                    <div class="img-container"><img class="image clickable" src=""/></div>
+                    <div class="img-container"><img class="image clickable" src=""/></div>
+            </div>
+            <footer class="main-footer">
+                <p id="copyright"/>© <em>2015 Sarah Whiting</em></p>
+                <nav class="nav" id="social-nav">
+                    <li class="clickable"><a href="https://www.facebook.com/olivebranchphotography?pnref=lhc"><img "facebook" src="http://static.wixstatic.com/media/24c03ae1fdd6901a99afa0a2e98f905b.png_128"/></a></li>
+                    <li  class="clickable"><a href="https://instagram.com/olivebranch.photography"><img id="instagram" src="http://static.wixstatic.com/media/22c492d85308109c30e7361ec2126b11.png_128"/></a></li>
+                </nav>
+            </footer>
+        </div>
+        
+        <div class="page-content" id="behind_the_lens-page" style="display: none;">
+            <div class="content-left">
+                <img src="http://static.wixstatic.com/media/2516d3_fbf4e436c00542b999af5d7a121a2852.jpg_850"/>
+                <p>Photo Credit: Shannon Dudley, Corker Photography</p>
+            </div>
+            <div class="content-right">
+                <h1 class="content-title">Behind The Lens</h1>
+                <p class="about-owner">
+                Hi! I'm the photographer behind the lens, the creator of Olive Branch Photography.  My name is Sarah Whiting, I'm a mother of two precious little ones, wife to an amazing man, and an artist with a camera in my hand.
+                </p>
+                </br>
+                <p class="about-owner">
+                Photography took me by surprise. In high school I took a photography class, pretty basic, with a point and shoot camera. My interest level was low and I felt uninspired. Years later, after marrying the love of my life and the birth of our second child, my husband decided it was time to upgrade our camera. At first I was terrified of our new DSLR, but with time I grew more and more determined to learn it's ins and outs and with that I grew to love photography with a passion I didn't know was in me.
+                </p>
+                </br>
+                <p class="about-owner">
+                Today I endeavor to share this passion with you by capturing life happening. Relationships, beautiful vulnerability, joy, love, precious moments that don't last long enough, these are what inspire me. In a single image I desire to freeze a laugh, a breath, a glance of love, a silly face, a jump of joy, a smile of happiness; a treasure for you to keep forever.
+                </p>
+            </div>
+            <footer class="main-footer">
+                <p id="copyright"/>© <em>2015 Sarah Whiting</em></p>
+                <nav class="nav" id="social-nav">
+                    <li><a href="https://www.facebook.com/olivebranchphotography?pnref=lhc"><img "facebook" src="http://static.wixstatic.com/media/24c03ae1fdd6901a99afa0a2e98f905b.png_128"/></a></li>
+                    <li><a href="https://instagram.com/olivebranch.photography"><img id="instagram" src="http://static.wixstatic.com/media/22c492d85308109c30e7361ec2126b11.png_128"/></a></li>
+                </nav>
+            </footer>
+        </div>
+        
+        <div class="page-content" id="pricing-page" style="display: none;">
+            <h1 class="content-title">Packages and pricing</h1>
+            <div class="package">
+                <img class="package-image" src="http://static.wixstatic.com/media/2516d3_50d90339eb4a4e07b9513155512530b0.jpg_512"/>
+                <span>Mini-Sessions</span>
+                <p></p>
+                <span>$50</span>
+                <p>
+                These sessions are 30 minutes long, include 15 edited digital images with printing rights, and are available for Babywearing, Breastfeeding, and Love {Engagement, Anniversary, Couples, Best Friends} photo packages.  In home lifestyle mini-sessions are available for Breastfeeding sessions. For all mini-sessions a variety of locations in Northwest Tucson are available.
+                </p>
+            </div>
+            <div class="package">
+                <img class="package-image" src="http://static.wixstatic.com/media/2516d3_7fadeabaf3974f9c8a399d225f12fc7e.jpg_512"/>
+                <span>Family/Maternity/Newborn</span>
+                <p></p>
+                <span>$120</span>
+                <p>
+                Family and Maternity sessions are 60-90 minutes long and include 50 edited digital images with printing rights. A variety of shooting locations in Tucson are available. Family sessions include up to 6 people. Please contact me for information about larger family photo sessions.
+                </p>
+                </br>
+                <p>
+                Newborn sessions are 2-3 hours long to accomodate feeding, diaper changes, and the comfort of baby and family. Included are 50 edited digital images with printing rights.  These sessions are typically done in home for the comfort of the baby and family and are lifestyle photo shoots.
+                </p>
+                </br>
+                <p>
+                Discounted Maternity and Newborn packages are available. Please contact me for more details.
+                </p>
+            </div>
+            <div class="package">
+                <img class="package-image" src="http://static.wixstatic.com/media/2516d3_176d9ceb4ece4aeea5d0169ddde119c2.jpg_512"/>
+                <span>Love</span>
+                <p>{Couples, Engagement, Anniversary, Best Friends}</p>
+                <span>$120</span>
+                <p>
+                These sessions are 60-90 minutes long and include 50 edited digital images with printing rights.  A variety of shooting locations in Tucson are available.
+                </p>
+                </br>
+                <p>
+                Multiple location engagement sessions are available. Please contact me for details.
+                </p>
+                
+            </div>
+            <br>
+            <br>
+            <p>*For wedding or birth photography, please contact me with details and we can work out a price customized for your wishes.</p>
+            <p>*All digital images will be delivered via Dropbox.  I am currently not offering the option of purchasing a CD of images.</p>
+            <p>*Professional prints are also available for order through me. Please contact me for pricing and details.</p>
+            <p>*A contract for services and a permission to use waiver must be completed and signed prior to your photography session.</p>
+            <footer class="main-footer">
+                <p id="copyright"/>© <em>2015 Sarah Whiting</em></p>
+                <nav class="nav" id="social-nav">
+                    <li><a href="https://www.facebook.com/olivebranchphotography?pnref=lhc"><img "facebook" src="http://static.wixstatic.com/media/24c03ae1fdd6901a99afa0a2e98f905b.png_128"/></a></li>
+                    <li><a href="https://instagram.com/olivebranch.photography"><img id="instagram" src="http://static.wixstatic.com/media/22c492d85308109c30e7361ec2126b11.png_128"/></a></li>
+                </nav>
+            </footer>
+        </div>
+        
+        <div class="page-content" id="contact-page">
+            <div class="content-left">
+                <img src="http://static.wixstatic.com/media/2516d3_f579b682c7414002a7a6137e1fc85d15.jpg_650"/>
+            </div>
+            <div class="content-right">
+                <h1 class="content-title">Contact</h1>
+                <p id="my-email">
+                Email: olivebranchphotographer@gmail.com
+                </p>
+                <p id="my-phone">
+                Phone: 360-908-7596
+                </p>
+                <div>
+                    <form class="form" action="PHP-Scripts/contact.php">
+                        <input type="text" name="client-name" placeholder="Name"/>
+                        <input type="text" name="client-email" placeholder="Email"/>
+                        <textarea type="textarea" name="client-message" placeholder="Message"></textarea>
+                        <button>Send</button>
+                    </form>
+                </div>
+            </div>
+            <footer class="main-footer">
+                <p id="copyright"/>© <em>2015 Sarah Whiting</em></p>
+                <nav class="nav" id="social-nav">
+                    <li><a href="https://www.facebook.com/olivebranchphotography?pnref=lhc"><img "facebook" src="http://static.wixstatic.com/media/24c03ae1fdd6901a99afa0a2e98f905b.png_128"/></a></li>
+                    <li><a href="https://instagram.com/olivebranch.photography"><img id="instagram" src="http://static.wixstatic.com/media/22c492d85308109c30e7361ec2126b11.png_128"/></a></li>
+                </nav>
+            </footer>
+        </div>
+        
+        <div class="page-content" id="blog-page">
+            <div id="article-content">
+                <div class="article">
+                    <div class="article-left">
+                        <h2 class="article-title">Story: A Special Adoption</h1>
+                        <p class="date">March 12, 2015</p>
+                        <image src="http://static.wixstatic.com/media/2516d3_cfd47df564764e58b498b8f1f7b9969b.jpg_srb_p_300_199_75_22_0.50_1.20_0.00_jpg_srb"/>
+                    </div>
+                    <div class="article-right">
+                        <p>
+                        Last year, in June, with the local babywearing group that I am involved in, I began a journey that I never expected, both personally and professionall...
+                        </p>
+                        <span>Read More</span>
+                    </div>
+                </div>
+                <div class="article">
+                    <div class="article-left">
+                        <h2 class="article-title">Story: A Special Adoption</h1>
+                        <p class="date">March 12, 2015</p>
+                        <image src="http://static.wixstatic.com/media/2516d3_cfd47df564764e58b498b8f1f7b9969b.jpg_srb_p_300_199_75_22_0.50_1.20_0.00_jpg_srb"/>
+                    </div>
+                    <div class="article-right">
+                        <p>
+                        Last year, in June, with the local babywearing group that I am involved in, I began a journey that I never expected, both personally and professionall...
+                        </p>
+                        <span>Read More</span>
+                    </div>
+                </div>
+                <div class="article">
+                    <div class="article-left">
+                        <h2 class="article-title">Story: A Special Adoption</h1>
+                        <p class="date">March 12, 2015</p>
+                        <image src="http://static.wixstatic.com/media/2516d3_cfd47df564764e58b498b8f1f7b9969b.jpg_srb_p_300_199_75_22_0.50_1.20_0.00_jpg_srb"/>
+                    </div>
+                    <div class="article-right">
+                        <p>
+                        Last year, in June, with the local babywearing group that I am involved in, I began a journey that I never expected, both personally and professionall...
+                        </p>
+                        <span>Read More</span>
+                    </div>
+                </div>
+                <div class="article">
+                    <div class="article-left">
+                        <h2 class="article-title">Story: A Special Adoption</h1>
+                        <p class="date">March 12, 2015</p>
+                        <image src="http://static.wixstatic.com/media/2516d3_cfd47df564764e58b498b8f1f7b9969b.jpg_srb_p_300_199_75_22_0.50_1.20_0.00_jpg_srb"/>
+                    </div>
+                    <div class="article-right">
+                        <p>
+                        Last year, in June, with the local babywearing group that I am involved in, I began a journey that I never expected, both personally and professionall...
+                        </p>
+                        <span>Read More</span>
+                    </div>
+                </div>
+                <div class="article">
+                    <div class="article-left">
+                        <h2 class="article-title">Story: A Special Adoption</h1>
+                        <p class="date">March 12, 2015</p>
+                        <image src="http://static.wixstatic.com/media/2516d3_cfd47df564764e58b498b8f1f7b9969b.jpg_srb_p_300_199_75_22_0.50_1.20_0.00_jpg_srb"/>
+                    </div>
+                    <div class="article-right">
+                        <p><?php include 'Blog/Article0/story.txt';?></p>
+                        <span>Read More</span>
+                    </div>
+                </div>
+            </div>
+            <div id="side-bar">
+                <div class="section">
+                    <h3 class="section-title">Featured Posts</h3>
+                    <div class="section-content">
+                        <img src="http://static.wixstatic.com/media/2516d3_cfd47df564764e58b498b8f1f7b9969b.jpg_srb_p_300_199_75_22_0.50_1.20_0.00_jpg_srb"/>
+                        <p>Story: A Special Adoption</p>
+                        <p>March 12, 2015</p>
+                    </div>
+                </div>
+                <div class="section">
+                    <h3 class="section-title">Recent Posts</h3>
+                    <div class="section-content">
+                    </div>
+                </div>
+                <div class="section">
+                    <h3 class="section-title">Archive</h3>
+                    <div class="section-content">
+                    </div>
+                </div>
+                <div class="section">
+                    <h3 class="section-title">Seach By Tags</h3>
+                    <div class="section-content">
+                    </div>
+                <div>
+                <div class="section">
+                    <h3 class="section-title">Follow Us</h3>
+                    <div class="section-content">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
+
+
+

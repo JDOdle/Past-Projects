@@ -1,0 +1,17 @@
+.image-table {
+    width: 100%;
+}
+
+.image {
+    width: auto;
+    height: 100%;
+    position: relative;
+}
+
+.img-container {
+    display: inline-block;
+    width: 22.5%;
+    height: 200px;
+    overflow: hidden;
+    margin: 1%;
+}
